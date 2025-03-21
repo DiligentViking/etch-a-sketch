@@ -6,6 +6,9 @@ function makeGrid(rows, columns) {
     for (j = 0; j < columns; j++) {
       const square = document.createElement('div');
       square.classList.add('square');
+      square.addEventListener('mouseover', () => {
+        square.classList.add('hover');
+      });
       row.appendChild(square);
     }
     container.appendChild(row);
