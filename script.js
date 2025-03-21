@@ -12,7 +12,6 @@ function makeGrid(rows, columns) {
       row.appendChild(square);
     }
     container.appendChild(row);
-    console.log('row created' + i);
   }
 }
 
