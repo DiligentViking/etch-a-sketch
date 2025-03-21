@@ -15,7 +15,7 @@ function makeGrid(rows, columns) {
   }
 }
 
-makeGrid(10, 10);
+makeGrid(20, 20);
 
 
 function wipeGrid() {
