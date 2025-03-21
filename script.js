@@ -4,7 +4,8 @@ function makeGrid(gridSize) {
   const container = document.querySelector('#container');
   for (i = 0; i < gridSize; i++) {
     const square = document.createElement('div');
-    square.classList.add('square');
+    square.classList.add('square');  // this doesn't work
+    square.style.color = "black";
     container.appendChild(square);
   }
 }
