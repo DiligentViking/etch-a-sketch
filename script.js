@@ -6,16 +6,25 @@ function makeGrid(rows, columns) {
     for (j = 0; j < columns; j++) {
       const square = document.createElement('div');
       square.classList.add('square');
-      square.addEventListener('mouseover', () => {
-        square.classList.add('hover');
-      });
+      // square.addEventListener('mouseover', () => {
+      //   square.classList.add('hover');
+      // });
       row.appendChild(square);
     }
     container.appendChild(row);
   }
 }
-
 makeGrid(20, 20);
+
+
+const container = document.querySelector('#container');
+container.addEventListener('mousedown', (event) => {
+  const eventClass = event.target.classList;
+  if (eventClass[0] === 'square') {
+    console.log('working');
+    event.target.classList.add('hover');
+  }
+})
 
 
 function wipeGrid() {
